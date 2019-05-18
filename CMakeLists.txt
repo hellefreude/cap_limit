@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(cap_limit0)
+project(cap_limit)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -24,10 +24,10 @@ include_directories(
 )
 
 ## Declare a C++ executable
-add_executable(cap_limit0 src/cap_limit_node.cpp)
+add_executable(cap_limit src/cap_limit_node.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(cap_limit0
+target_link_libraries(cap_limit
   ${catkin_LIBRARIES}
   wiringPi
 )
